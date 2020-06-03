@@ -1,0 +1,24 @@
+{
+  "name": "fully-storage-factory",
+  "version": "1.0.0",
+  "description": "fully-storage example basic usage nosql store",
+  "main": "app.js",
+  "scripts": {
+
+    "start": "node .",
+
+    "dump-articles": "storage -- --dump articles",
+    "clear-articles": "storage -- --regenerate articles",
+    "export-articles": "storage -- --export",
+    "import-articles": "storage -- --import"
+  },
+  "keywords": [],
+  "author": "S.GABORIEAU <sam.gabor@hotmail.com> (https://gitbub.com/Orivoir/)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "fully-storage": "^1.3.1"
+  }
+}

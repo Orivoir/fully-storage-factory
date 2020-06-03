@@ -1,0 +1,117 @@
+:root {
+
+    --dark: rgb( 65,65,65 );
+    --light: rgb(245,245,245);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.hide, .hidden {
+
+    display: none!important;
+}
+
+
+body {
+
+    background: var(--light);
+}
+
+textarea {
+
+    resize: none;
+}
+
+input,textarea {
+
+    padding: 1.2vh .5vw;
+    background: transparent;
+    border: 1px solid #000;
+    display: block;
+    width: 100%;
+}
+
+form div {
+
+    margin: 1.85vh 0;
+}
+
+main {
+
+    width: 65%;
+    min-width: 320px;
+    margin: auto;
+}
+
+label {
+
+    color: var(--dark);
+    font-style: italic;
+    font-size: 16px;
+}
+
+.wrap-articles-list {
+
+    background: var(--dark);
+
+    color: var(--light);
+
+    padding: 1.25vh .85vw;
+
+    margin: 1.85vh 0;
+}
+
+.article-item {
+
+    background: rgb( 71,71,71 );
+    padding: .75vh .5vw;
+}
+
+.empty-articles {
+
+    font-size: 20px;
+    letter-spacing: .15rem;
+    font-weight: 600;
+}
+
+form button {
+
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #000;
+    padding: .75vh .33vw;
+    font-size: 18px;
+    letter-spacing: .13rem;
+}
+
+footer p {
+    font-size: 20px;
+    letter-spacing: .15rem;
+}
+
+footer {
+
+    background: var(--dark);
+    color: var(--light);
+    padding: 2vh 1.2vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    color: var(--light);
+    font-style: italic;
+}

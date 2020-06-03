@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>articles</title>
+        <link rel="stylesheet" href="/public/index.css">
+    </head>
+
+    <body>
+
+        <main>
+
+            <!-- wrap form post article -->
+            <section class="wrap-form">
+                <form
+                    method="POST"
+                    action="/new-article"
+                >
+                    <div class="hide form-error"></div>
+
+                    <div>
+                        <label for="title">Title</label>
+                        <input
+                            name="title"
+                            id="title"
+                            autofocus="true"
+                            autocomplete="off"
+                            placeholder="fully storage conquest world!"
+                        />
+                    </div>
+
+                    <div>
+                        <label for="text">text</label>
+                        <textarea
+                            name="text"
+                            id="text"
+                            cols="30"
+                            rows="10"
+                            placeholder="Lorem ipsum dolor sit amet consectum..."
+                        >
+                        </textarea>
+                    </div>
+
+                    <div>
+                        <button
+                            type="submit"
+                        >
+                            send article
+                        </button>
+                    </div>
+
+                </form>
+            </section>
+
+            <!-- wrap articles list -->
+            <section class="wrap-articles-list">
+
+                <% if( articles.length > 0 ) { %>
+
+                    <ul class="articles-list">
+
+                        <% for( article of articles ) { %>
+
+                            <li class="article-item">
+                                <div>
+                                    <h2>
+                                        <%= article.title %>
+                                    </h2>
+
+                                    <p>
+                                        <%= article.text %>
+                                    </p>
+                                </div>
+                            </li>
+
+                        <% } %>
+
+                    </ul>
+
+                <% } else { %>
+
+                    <p class="empty-articles">
+                        Write the first article.
+                    </p>
+
+                <% } %>
+
+            </section>
+
+            <footer>
+                <p>
+                    <a href="https://npmjs.com/package/fully-storage">
+                        fully-storage
+                    </a>
+                    example basic usage nosql store
+                </p>
+            </footer>
+
+        </main>
+
+        <script src="/public/index.js"></script>
+
+    </body>
+
+</html>
